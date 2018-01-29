@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>AdvancedSearch</title>
+<script type='text/javascript'>
+function O(){
+var file=document.getElementById("in").value;
+file=file.toLowerCase();
+//alert(file);
+var path="Elements/"+file+"/"+file+".html";
+window.open(path);
+
+}
+</script>
+<style type="text/css">
+button{
+border-width:2px;
+border-color:white;
+font-size:2em;
+}
+body{
+background-color:#cccccc;
+
+}
+p{
+text-align:center;
+color:red;
+font-size:4em;
+font-weight:bolder;
+text-decoration:underline;
+}
+input{
+font-size:2em;
+border-width:5pt;
+border-color:red;
+}
+</style>
+</head>
+<body>
+
+<p>Advanced Search for Elements</p>
+<form align="center">
+<input id="in" type="text" size=10/><br><br>
+<button onClick="O()">Search</button>
+</form>
+
+<a href="main.htm"><button>GO BACK</button></a>
+</body>
+</html>

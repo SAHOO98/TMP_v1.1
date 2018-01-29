@@ -1,0 +1,2 @@
+mw.loader.implement("ext.imageMetrics.head",function($,jQuery){(function(mw,$){'use strict';mw.imageMetricsLoadTime=null;$(function(){var $file=$('#file').find('img'),file=$file.get(0);if(!file){return;}if(file.readyState===4){mw.imageMetricsLoadTime=0;return;}$file.load(function(){if(window.mediaWikiLoadStart){mw.imageMetricsLoadTime=mw.now()-window.mediaWikiLoadStart;}});});}(mediaWiki,jQuery));});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:be985614f51226f83bd8349e3d7a50a5 */

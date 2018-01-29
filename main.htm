@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>THE MODERN PERIODIC TABLE</title>
+<script type="text/JavaScript" src="main.js"></script>
+<style type="text/css">
+h1{
+  transition-duration: 0.2s;
+  text-align: center;
+  font-size: 1in;
+  text-decoration: underline;
+  color: #041541;
+}
+h1:hover{
+  text-decoration:underline wavy;
+  text-shadow: 2px 4px 10px black;
+}
+button{
+  transition-duration: 0.5s;
+  border-width:5px;
+  border-radius: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  base:#ccffcc;
+}
+button:hover{
+ box-shadow:4px 6px 4px  black;
+
+}
+h4{
+  transition-duration: 0.5;
+}
+h4:hover{
+  font-size:1.6em;
+  text-shadow: 2px 3px 15px red;
+}
+td{
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
+  padding: 10px 10px 10px 10px;
+}
+th{
+  color: red;
+  font-size: 1.5em;
+}
+body{
+background-color:#cccccc;
+}
+table{
+margin: auto;
+background-color:#cccccc;
+border-radius: 5px;
+border-width: 5px;
+border-color: black;
+}
+</style>
+</head>
+<body>
+
+<h1 onclick="open_MP()">Modern Periodic Table</h1>
+<table>
+<tr>
+<th colspan=3 ><h4 id ='sblock' onclick='block_open(this)'><--s-block--></h4></th>
+<th colspan=10><h4 id = 'dblock' onclick='block_open(this)'><--d-block(TRASITION ELEMENTS)--></h4></th>
+<th colspan=6><h4 id = 'pblock' onclick='block_open(this)'><--p-block(except Group-18)--></h4></th>
+</tr>
+<tr>
+<th><sub align="center">Period ↓</sub><sup>Group →</sup></th>
+<th>1(ALKALI METALS)</th>
+<th colspan=16  ></th>
+<th>18(NOBLE GASES)</th>
+</tr>
+
+<tr>
+<th>1</th>
+<td bgcolor="red" id = "H"><button onclick="H()"><h3>1:H</h3></button></td>
+<th><font color="red">2(ALKALI EARTH METALS)</font></th>
+<th colspan=10 rowspan=2 ></th>
+<th><font color="red">13</font></th>
+<th><font color="red">14<font></th>
+<th><font color="red">15</font></th>
+<th><font color="red">16<font></th>
+<th><font color="red">17(HALOGENS)</font></th>
+<td bgcolor="#9999ff"><button onclick="He()"><h3>2:He</h3></button></td>
+</tr>
+<tr>
+<th><font color="red">2</font></th>
+<td bgcolor="#ffff00"><button onclick="Li()"><h3>3:Li</h3></button></td>
+<td  bgcolor="#66cc99"><button onclick="Be()"><h3>4:Be</h3></button></td>
+<td bgcolor="#ffcc33"><button onclick="B()"><h3>5:B<h3/></button></td>
+<td bgcolor="#b000ae"><button onclick="C()"><h3>6:C</h3></button></td>
+<td bgcolor="#b000ae"><button onclick="N()"><h3>7:N</h3></button></td>
+<td bgcolor="#b000ae"><button onclick="O()"><h3>8:O</h3></button></td>
+<td bgcolor="#99ff00"><button onclick="F()"><h3>9:F</h3></button></td>
+<td  bgcolor="#9999ff"><button onclick="Ne()"><h3>10:Ne</h3></button></td>
+</tr>
+<tr>
+<th><font color="red">3</font></th>
+<td bgcolor="#ffff00"><button onclick="Na()"><h3>11:Na</h3></button></td>
+<td bgcolor="#66cc99"><button onclick="Mg()"><h3>12:Mg</h3></button></td>
+<th><font color="red">3</font></th>
+<th><font color="red">4</font></th>
+<th><font color="red">5</font></th>
+<th><font color="red">6</font></th>
+<th><font color="red">7</font></th>
+<th><font color="red">8</font></th>
+<th><font color="red">9</font></th>
+<th><font color="red">10</font></th>
+<th><font color="red">11</font></th>
+<th><font color="red">12</font></th>
+<td bgcolor="#996600"><button onclick="Al()"><h3>13:Al</h3></button></td>
+<td bgcolor="#ffcc33"><button onclick="Si()"><h3>14:Si</h3></button></td>
+<td bgcolor="#b000ae"><button onclick="P()"><h3>15:P</h3></button></td>
+<td bgcolor="#b000ae"><button onclick="S()"><h3>16:S</h3></button></td>
+<td bgcolor="#99ff00"><button onclick="Cl()"><h3>17:Cl</h3></button></td>
+<td  bgcolor="#9999ff"><button onclick="Ar()"><h3>18:Ar</h3></button></td>
+</tr>
+<tr>
+<th><font color="red">4</font></th>
+<td bgcolor="#ffff00"><button onclick="K()"><h3>19:K</h3></button></td>
+<td bgcolor="#66cc99"><button onclick="Ca()"><h3>20:Ca</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Sc()"><h3>21:Sc</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Ti()"><h3>22:Ti</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="V()"><h3>23:V</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Cr()"><h3>24:Cr</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Mn()"><h3>25:Mn</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Fe()"><h3>26:Fe</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Co()"><h3>27:Co</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Ni()"><h3>28:Ni</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Cu()"><h3>29:Cu</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Zn()"><h3>30:Zn</h3></button></td>
+<td bgcolor="#996600"><button onclick="Ga()"><h3>31:Ga</h3></button></td>
+<td bgcolor="#ffcc33"><button onclick="Ge()"><h3>32:Ge</h3></button></td>
+<td bgcolor="#ffcc33"><button onclick="As()"><h3>33:As</h3></button></td>
+<td bgcolor="#b000ae"><button onclick="Se()"><h3>34:Se</h3></button></td>
+<td bgcolor="#99ff00"><button onclick="Br()"><h3>35:Br</h3></button></td>
+<td  bgcolor="#9999ff"><button onclick="Kr()"><h3>36:Kr</h3></button></td>
+</tr>
+<tr>
+<th><font color="red">5</font></th>
+<td bgcolor="#ffff00"><button onclick="Rb()"><h3>37:Rb</h3></button></td>
+<td bgcolor="#66cc99"><button onclick="Sr()"><h3>38:Sr</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Y()"><h3>39:Y</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Zr()"><h3>40:Zr</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Nb()"><h3>41:Nb</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Mo()"><h3>42:Mo</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Tc()"><h3>43:Tc</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Ru()"><h3>44:Ru</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Rh()"><h3>45:Rh</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Pd()"><h3>46:Pd</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Ag()"><h3>47:Ag</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Cd()"><h3>48:Cd</h3></button></td>
+<td bgcolor="#996600"><button onclick="In()"><h3>49:In</h3></button></td>
+<td bgcolor="#996600"><button onclick="Sn()"><h3>50:Sn</h3></button></td>
+<td bgcolor="#ffcc33"><button onclick="Sb()"><h3>51:Sb</h3></button></td>
+<td bgcolor="#ffcc33"><button onclick="Te()"><h3>52:Te</h3></button></td>
+<td bgcolor="#99ff00"><button onclick="I()"><h3>53:I</h3></button></td>
+<td bgcolor="#9999ff"><button onclick="Xe()"><h3>54:Xe</h3></button></td>
+</tr>
+<tr>
+<th><font color="red">6</font></th>
+<td bgcolor="#ffff00"><button onclick="Cs()"><h3>55:Cs</h3></button></td>
+<td bgcolor="#66cc99"> <button onclick="Ba()"><h3>56:Ba</h3></button></td>
+<td bgcolor="#669933"><A href="lanact.html"><button>57-71:<h5>Lanthanides</h5></button></a></td>
+<td bgcolor="#00ffff"><button onclick="Hf()"><h3>72:Hf</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Ta()"><h3>73:Ta</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="W()"><h3>74:W</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Re()"><h3>75:Re</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Os()"><h3>76:Os</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Ir()"><h3>77:Ir</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Pt()"><h3>78:Pt</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Au()"><h3>79:Au</h3></button></td>
+<td bgcolor="#00ffff"><button onclick="Hg()"><h3>80:Hg</h3></button></td>
+<td bgcolor="#996600"><button onclick="Tl()"><h3>81:Tl</h3></button></td>
+<td bgcolor="#996600"><button onclick="Pb()"><h3>82:Pb</h3></button></td>
+<td bgcolor="#996600"><button onclick="Bi()"><h3>83:Bi</h3></button></td>
+<td bgcolor="#ffcc33"><button onclick="Po()"><h3>84:Po</h3></button></td>
+<td bgcolor="#99ff00"><button onclick="At()"><h3>85:At</h3></button></td>
+<td  bgcolor="#9999ff"><button onclick="Rn()"><h3>86:Rn</h3></button></td>
+</tr>
+<tr>
+<th><font color="red">7</font></th>
+<td bgcolor="#ffff00"><button onclick="Fr()"><h3>87:Fr</h3></button></td>
+<td bgcolor="#66cc99"><button onclick="Ra()"><h3>88:Ra</h3></button></td>
+<td bgcolor="#cccc09"><A href="lanact.html"><button>89-103:<h5>Actinides</h5></button></a></td>
+<td BGCOLOR="#ffccff"><button onclick="Rf()"><h3>104:Rf</h3></button></td>
+<td BGCOLOR="#ffccff"><button onclick="Db()"><h3>105:Db</h3></button></td>
+<td BGCOLOR="#ffccff"><button onclick="Sg()"><h3>106:Sg</h3></button></td>
+<td BGCOLOR="#ffccff"><button onclick="Bh()"><h3>107:Bh</h3></button></td>
+<td BGCOLOR="#ffccff"><button onclick="Hs()"><h3>108:Hs</h3></button></td>
+<td BGCOLOR="#ffccff"><button onclick="Mt()"><h3>109:Mt</h3></button></td>
+<td BGCOLOR="#ffccff"><button onclick="Ds()"><h3>110:Ds</h3></button></td>
+<td BGCOLOR="#ffccff"><button onclick="Uuu()"><h3>111:Uuu</h3></button></td>
+<td BGCOLOR="#ffccff"><button onclick="Uub()"><h3>112:Uub</h3></button></td>
+<td bgcolor="#996600"><button onclick="Uut()"><h3>113:Uut</h3></button></td>
+<td bgcolor="#996600"><button onclick="Fl()"><h3>114:Fl</h3></button></td>
+<td bgcolor="#996600"><button onclick="Uup()"><h3>115:Uup</h3></button></td>
+<td bgcolor="#996600"><button onclick="Lv()"><h3>116:Lv</h3></button></td>
+<td bgcolor="#99ff00"><button onclick="Uus()"><h3>117:Uus</h3></button></td>
+<td bgcolor="#9999ff"><button onclick="Uuo()"><h3>118:Uuo</h3></button></td>
+</tr>
+</table>
+<p align="right">
+<a href="hepl.html"><button><h3>Help!</h3></button></a><br>
+<a href="k.html"><button><h3>Advance Search</h3></button></a>
+</p>
+<h2 align="right"><font color="red"><b>Developed by USD.</b></font></h2>
+
+ </body>
+</html>
